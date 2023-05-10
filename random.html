@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div id="parent" class="parent">
+        <div class="div1">Player 1 </div>
+        <div id="dog" class="div2">Chien</div>
+        <div id="cat" class="div3"> Chat</div>
+        <div id="mouse" class="div4">Souris </div>
+        <div class="div5"> Adversaire</div>
+        <div class="div6"> Chien</div>
+        <div class="div7"> Chat</div>
+        <div class="div8"> Souris</div>
+        <div id="choixjoueur" class="div9"> Choix Joueur</div>
+        <div id="resultat" class="div10"> Result</div>
+        <div id="robot" class="div11"> Choix robot</div>
+    </div>
+
+
+
+    <script>
+        var player = ""
+        cat.addEventListener("click", function () {
+            catplayer();
+        });
+        function catplayer() {
+            var cat = "cat"
+            player = cat
+            console.log("cat")
+            document.querySelector('#choixjoueur').innerHTML = cat
+
+        };
+
+        mouse.addEventListener("click", function () {
+            mouseplayer();
+        });
+        function mouseplayer() {
+            var mouse = "mouse"
+            console.log("mouse")
+
+            player = mouse
+            document.querySelector('#choixjoueur').innerHTML = mouse
+
+        };
+
+        dog.addEventListener("click", function () {
+            dogplayer();
+        });
+        function dogplayer() {
+            var dog = "dog"
+            console.log("dog")
+            player = dog
+            document.querySelector('#choixjoueur').innerHTML = player
+
+        };
+
+
+
+        parent.addEventListener("click", function () {
+            clickplayer();
+
+
+
+
+        });
+
+        function clickplayer() {
+            var animaux = ["dog", "cat", "mouse"]
+            animaux.forEach(element => {
+                animaux.push(element)
+            });
+            var values = animaux
+            var valueToUse = values[Math.floor(Math.random() * values.length)];
+            var pos = animaux.indexOf(valueToUse);
+            document.querySelector('#robot').innerHTML = animaux[pos]
+            console.table(animaux[pos]);
+
+
+            if (animaux[pos] == player) {
+var nul = document.querySelector('#resultat')
+nul.innerHTML = "match nul"
+console.log("egal")
+}
+
+
+else if (player == dog && animaux[pos] == cat || player == cat && animaux[pos] == mouse) {
+console.log("yep")
+document.querySelector('#resultat').innerHTML = "win"
+console.log("you win")
+}
+
+
+
+
+
+
+
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
