@@ -63,7 +63,7 @@ class PERSONNAGE {
 let Character1 = new PERSONNAGE('harry', false, false, true, false, 'harry.png', 1, true, false, false, false, false, false, true, false, false, true, false, false, false, false);
 let Character2 = new PERSONNAGE('serge', false, true, false, false, 'serge.png', 2, false, true, false, false, false, true, false, true, false, false, false, false, false, false);
 let Character3 = new PERSONNAGE('Julie', true, false, false, false, 'julie.png', 3, true, false, false, false, false, false, true, false, false, true, false, false, false, false);
-let Character4 = new PERSONNAGE('Mathilde', false, true, false, false, 'Mathilde.png', 4, false, true, false, false, true, false, false, false, true, false, false, false, true, false);
+let Character4 = new PERSONNAGE('Mathilde', false, true, false, false, 'mathilde.png', 4, false, true, false, false, true, false, false, false, true, false, false, false, true, false);
 let Character5 = new PERSONNAGE('Marie', false, false, false, false, 'marie.png', 5, true, false, false, false, false, false, true, false, false, false, true, false, false, false);
 let Character6 = new PERSONNAGE('Ben', true, true, false, false, 'ben.png', 6, true, false, false, false, true, false, false, false, true, false, false, false, false, false);
 let Character7 = new PERSONNAGE('Laura', false, true, false, false, 'laura.png', 7, false, true, false, false, false, true, false, false, false, false, true, false, false, false);
