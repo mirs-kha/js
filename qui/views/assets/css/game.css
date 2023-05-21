@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+img{
+    width: 200px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto';
+}
+
+.all{
+    display: flex;
+    width: 100%;
+}
+
+#choix{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.cards {
+    width: 70%;
+    top: 50%;
+    margin-left: 2.5%;
+}
+
+.card h2 {
+    font-size: 1em;
+}
+
+.card {
+    float: left;
+    background-color: rgb(233, 233, 233);
+    width: 10%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    transition: ease-in-out 0.7s;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+}
+
+.yourCard {
+    width: 20%;
+
+    right: 5%;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    top: 50%;
+
+}
+
+.yourCard img {
+    width: 100%;
+}
+
+
+
+
+#parent {
+    height: 90vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: url("../imgs/bg.png") center/cover;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.div5 {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.div6 {
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+.div7 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div8 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div9 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div10 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div11 {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+.div12 {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+.div13 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div14 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div15 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div16 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.div17 {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+.div18 {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.div19 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div20 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div21 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.div22 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.div23 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.div24 {
+    grid-area: 4 / 6 / 5 / 7;
+}
+
+.btn2 {
+    background: white;
+    border: solid 1px #f3f1f1;
+    padding: 20px;
+    color: #463636;
+    cursor: pointer;
+    width: 20%;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+div[disabled] {
+    background: #fbfbfb;
+    pointer-events: none;
+    box-shadow: none;
+    transition: all 1s ease-out;
+}
+
+
+
+.retourne {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
