@@ -25,9 +25,13 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-btns.onclick = function() {
-        modal.style.display = "none";
-  }
+
+btns.addEventListener("click", function () {
+    modal.style.display = "none";
+})
+
+
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
