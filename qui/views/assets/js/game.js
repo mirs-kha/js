@@ -7,7 +7,23 @@ var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes
 var btnsFerme = document.getElementsByClassName(".btn2")
 var btns = document.querySelector('.btn2')
 
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+modal.setAttribute("style","display:none;")
 
+        if (life > 0) {
+            console.log("fuck")
+            life = life - 1
+            afflife.innerHTML = life
+          
+        }
+        else {
+            document.querySelector('#choix').setAttribute("disabled", "true")
+            console.log(btns)
+        }
+    })
+
+}
 // Get the modal
 var modal = document.querySelector('#myModal')
 
@@ -39,23 +55,7 @@ span.addEventListener("click", function () {
 
 
 
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-modal.setAttribute("style","display:none;")
 
-        if (life > 0) {
-            console.log("fuck")
-            life = life - 1
-            afflife.innerHTML = life
-          
-        }
-        else {
-            document.querySelector('#choix').setAttribute("disabled", "true")
-            console.log(btns)
-        }
-    })
-
-}
 
 
 
