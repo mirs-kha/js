@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto';
 }
 
+footer{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
 .all{
     display: flex;
     width: 100%;
