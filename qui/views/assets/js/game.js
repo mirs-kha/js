@@ -27,7 +27,7 @@ span.onclick = function() {
 
 
 btns.addEventListener("click", function () {
-    modal.setAttribute("display", "none")
+    modal.setAttribute("style","display:none;")
 })
 
 
