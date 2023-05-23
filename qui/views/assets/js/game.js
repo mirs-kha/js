@@ -3,6 +3,9 @@ const chapeau = document.querySelector('#chapeau')
 var afflife = document.querySelector('#life')
 var life = 3
 
+var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
+var btns = document.getElementsByClassName("btn2")
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -22,6 +25,10 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+btns.onclick = function() {
+    modal.style.display = "none";
+  }
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -29,8 +36,7 @@ window.onclick = function(event) {
   }
 }
 
-var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
-var btns = document.getElementsByClassName("btn2")
+
 
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
