@@ -4,7 +4,7 @@ var afflife = document.querySelector('#life')
 var life = 3
 
 var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
-var btns = document.querySelector('.btn2')
+var btns = document.getElementsByClassName("btn2")
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -27,7 +27,7 @@ span.onclick = function() {
 
 
 btns.addEventListener("click", function () {
-    modal.style.display = "none";
+    modal.setAttribute("display", "none")
 })
 
 
