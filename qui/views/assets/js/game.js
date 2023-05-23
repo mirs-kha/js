@@ -7,6 +7,11 @@ close.addEventListener("click", function () {
     document.querySelector(".modal").style.display = "none"
 });
 
+
+maquestion.addEventListener("click", function () {
+    document.querySelector(".modal").style.display = "block"
+});
+
 var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
 var btns = document.getElementsByClassName("btn2")
 
