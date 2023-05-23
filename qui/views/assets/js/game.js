@@ -7,6 +7,7 @@ var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes
 var btns = document.getElementsByClassName(".btn2")
 var btnsFerme = document.querySelector('.btn2')
 
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
