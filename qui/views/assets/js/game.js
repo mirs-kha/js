@@ -23,11 +23,11 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.addEventListener("click", function () {
   modal.setAttribute("style","display:block;")
-}
+})
 
 span.addEventListener("click", function () {
   modal.setAttribute("style","display:none;")
-}
+})
 
 
 // // When the user clicks anywhere outside of the modal, close it
