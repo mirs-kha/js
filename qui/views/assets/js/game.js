@@ -28,9 +28,7 @@ span.onclick = function() {
 }
 
 
-btnsFerme.addEventListener("click", function () {
-    modal.setAttribute("style","display:none;")
-})
+
 
 
 
@@ -204,7 +202,7 @@ Characters.forEach(element => {
     // }
 
     chapeau.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].chapeau !== element.chapeau) {
 
             const creacard = document.querySelector(`#${element.name}`)
@@ -223,7 +221,7 @@ Characters.forEach(element => {
 
 
     lunettes.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].lunettes !== element.lunettes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -240,7 +238,7 @@ Characters.forEach(element => {
 
 
     barbe.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].barbe !== element.barbe) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -255,7 +253,7 @@ Characters.forEach(element => {
 
 
     oreilles.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].oreilles !== element.oreilles) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -277,7 +275,7 @@ Characters.forEach(element => {
     })
 
     cornes.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].cornes !== element.cornes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -289,7 +287,7 @@ Characters.forEach(element => {
     })
 
     cheveux.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].cheveux !== element.cheveux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -301,7 +299,7 @@ Characters.forEach(element => {
     })
 
     ailes.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].ailes !== element.ailes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -314,7 +312,7 @@ Characters.forEach(element => {
 
 
     moustache.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].moustache !== element.moustache) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -326,7 +324,7 @@ Characters.forEach(element => {
     })
 
     troisyeux.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].troisyeux !== element.troisyeux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -338,7 +336,7 @@ Characters.forEach(element => {
     })
 
     deuxyeux.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].deuxyeux !== element.deuxyeux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -350,7 +348,7 @@ Characters.forEach(element => {
     })
 
     oeil.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].oeil !== element.oeil) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -362,7 +360,7 @@ Characters.forEach(element => {
     })
 
     rose.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].rose !== element.rose) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -374,7 +372,7 @@ Characters.forEach(element => {
     })
 
     jaune.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].jaune !== element.jaune) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -386,7 +384,7 @@ Characters.forEach(element => {
     })
 
     vert.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].vert !== element.vert) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -398,7 +396,7 @@ Characters.forEach(element => {
     })
 
     violet.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].violet !== element.violet) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -410,7 +408,7 @@ Characters.forEach(element => {
     })
 
     multi.addEventListener("click", function () {
-
+       modal.setAttribute("style","display:none;")
         if (who[pos].multi !== element.multi) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
