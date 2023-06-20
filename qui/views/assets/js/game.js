@@ -34,6 +34,68 @@ var btn = document.querySelector('#myBtn')
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+
+
+
+function updateLife() {
+    // Mettre à jour la valeur de "life"
+    life -= 1;
+  
+    // Mettre à jour l'affichage de "life"
+    var lifeElement = document.getElementById("life");
+    lifeElement.textContent = "Life: " + life;
+  
+    // Vérifier si la vie est épuisée
+    if (life <= 0) {
+      // Implémentez ici la logique pour le cas où la vie est épuisée
+      // Par exemple, affichez un message de défaite ou effectuez une action spécifique
+      // ...
+  
+      // Fermer le modal si nécessaire
+      modal.style.display = "none";
+    }
+  }
+  
+  // Attacher un gestionnaire d'événement au bouton pour ouvrir le modal
+  btn.onclick = function() {
+    // Afficher le modal
+    modal.style.display = "block";
+  
+    // Appeler la fonction pour mettre à jour la valeur de "life"
+    updateLife();
+  }
+  
+  // Attacher un gestionnaire d'événement à la croix pour fermer le modal
+  span.onclick = function() {
+    // Fermer le modal
+    modal.style.display = "none";
+  }
+  
+  // Attacher un gestionnaire d'événement à l'élément window pour fermer le modal lorsque l'utilisateur clique en dehors du modal
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      // Fermer le modal
+      modal.style.display = "none";
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // When the user clicks the button, open the modal 
 
 
@@ -418,7 +480,6 @@ Characters.forEach(element => {
     })
 
 });
-
 
 
 
