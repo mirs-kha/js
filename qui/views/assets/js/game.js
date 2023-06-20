@@ -9,21 +9,36 @@ var btns = document.querySelector('.btn2')
 
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
-modal.setAttribute("style","display:none;")
+        modal.setAttribute("style", "display:none;")
 
-        if (life > 0) {
-            console.log("fuck")
-            life = life - 1
-            afflife.innerHTML = life
-          
-        }
-        else {
-            document.querySelector('#choix').setAttribute("disabled", "true")
-            console.log(btns)
+
+
+        // Fonction pour mettre à jour la valeur de "life" et vérifier si elle est épuisée
+        function updateLife() {
+            // Mettre à jour la valeur de "life"
+            life -= 1;
+
+            // Mettre à jour l'affichage de "life"
+            var lifeElement = document.getElementById("life");
+            lifeElement.textContent = "Life: " + life;
+
+
+
+            if (life > 0) {
+                console.log("fuck")
+                life = life - 1
+                afflife.innerHTML = life
+
+            }
+            else {
+                document.querySelector('#choix').setAttribute("disabled", "true")
+                console.log(btns)
+            }
         }
     })
 
 }
+
 // Get the modal
 var modal = document.querySelector('#myModal')
 
@@ -34,77 +49,15 @@ var btn = document.querySelector('#myBtn')
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-
-
-
-
-function updateLife() {
-    // Mettre à jour la valeur de "life"
-    life -= 1;
-  
-    // Mettre à jour l'affichage de "life"
-    var lifeElement = document.getElementById("life");
-    lifeElement.textContent = "Life: " + life;
-  
-    // Vérifier si la vie est épuisée
-    if (life <= 0) {
-      // Implémentez ici la logique pour le cas où la vie est épuisée
-      // Par exemple, affichez un message de défaite ou effectuez une action spécifique
-      // ...
-  
-      // Fermer le modal si nécessaire
-      modal.style.display = "none";
-    }
-  }
-  
-  // Attacher un gestionnaire d'événement au bouton pour ouvrir le modal
-  btn.onclick = function() {
-    // Afficher le modal
-    modal.style.display = "block";
-  
-    // Appeler la fonction pour mettre à jour la valeur de "life"
-    updateLife();
-  }
-  
-  // Attacher un gestionnaire d'événement à la croix pour fermer le modal
-  span.onclick = function() {
-    // Fermer le modal
-    modal.style.display = "none";
-  }
-  
-  // Attacher un gestionnaire d'événement à l'élément window pour fermer le modal lorsque l'utilisateur clique en dehors du modal
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      // Fermer le modal
-      modal.style.display = "none";
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // When the user clicks the button, open the modal 
 
 
 btn.addEventListener("click", function () {
-  modal.setAttribute("style","display:block;")
+    modal.setAttribute("style", "display:block;")
 })
 
 span.addEventListener("click", function () {
-  modal.setAttribute("style","display:none;")
+    modal.setAttribute("style", "display:none;")
 })
 
 
@@ -224,18 +177,18 @@ Characters.forEach(element => {
     for (var i = 0; i < btns3.length; i++) {
         btns3[i].addEventListener("click", function () {
             console.log(element.name)
-            if (who[pos].name === element.name){
+            if (who[pos].name === element.name) {
                 life = 0
                 alert("vous avez gagné !!!!!")
                 document.querySelector('#parent').setAttribute("disabled", "true")
-                
+
 
             }
-            else{
+            else {
                 life = 0
                 alert(`vous avez perdu !!!!! il fallait trouver ${who[pos].name}`)
                 document.querySelector('#parent').setAttribute("disabled", "true")
-                
+
             }
 
         })
@@ -262,7 +215,7 @@ Characters.forEach(element => {
     // }
 
     chapeau.addEventListener("click", function () {
-       
+
         if (who[pos].chapeau !== element.chapeau) {
 
             const creacard = document.querySelector(`#${element.name}`)
@@ -281,7 +234,7 @@ Characters.forEach(element => {
 
 
     lunettes.addEventListener("click", function () {
-       
+
         if (who[pos].lunettes !== element.lunettes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -298,7 +251,7 @@ Characters.forEach(element => {
 
 
     barbe.addEventListener("click", function () {
-       
+
         if (who[pos].barbe !== element.barbe) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -313,7 +266,7 @@ Characters.forEach(element => {
 
 
     oreilles.addEventListener("click", function () {
-       
+
         if (who[pos].oreilles !== element.oreilles) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.setAttribute("class", `div${element.id} retourne`)
@@ -335,7 +288,7 @@ Characters.forEach(element => {
     })
 
     cornes.addEventListener("click", function () {
-      
+
         if (who[pos].cornes !== element.cornes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -347,7 +300,7 @@ Characters.forEach(element => {
     })
 
     cheveux.addEventListener("click", function () {
-       
+
         if (who[pos].cheveux !== element.cheveux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -359,7 +312,7 @@ Characters.forEach(element => {
     })
 
     ailes.addEventListener("click", function () {
-       
+
         if (who[pos].ailes !== element.ailes) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -372,7 +325,7 @@ Characters.forEach(element => {
 
 
     moustache.addEventListener("click", function () {
-       
+
         if (who[pos].moustache !== element.moustache) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -384,7 +337,7 @@ Characters.forEach(element => {
     })
 
     troisyeux.addEventListener("click", function () {
-       
+
         if (who[pos].troisyeux !== element.troisyeux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -396,7 +349,7 @@ Characters.forEach(element => {
     })
 
     deuxyeux.addEventListener("click", function () {
-       
+
         if (who[pos].deuxyeux !== element.deuxyeux) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -408,7 +361,7 @@ Characters.forEach(element => {
     })
 
     oeil.addEventListener("click", function () {
-       
+
         if (who[pos].oeil !== element.oeil) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -420,7 +373,7 @@ Characters.forEach(element => {
     })
 
     rose.addEventListener("click", function () {
-       
+
         if (who[pos].rose !== element.rose) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -432,7 +385,7 @@ Characters.forEach(element => {
     })
 
     jaune.addEventListener("click", function () {
-       
+
         if (who[pos].jaune !== element.jaune) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -444,7 +397,7 @@ Characters.forEach(element => {
     })
 
     vert.addEventListener("click", function () {
-      
+
         if (who[pos].vert !== element.vert) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -456,7 +409,7 @@ Characters.forEach(element => {
     })
 
     violet.addEventListener("click", function () {
-       
+
         if (who[pos].violet !== element.violet) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
@@ -468,7 +421,7 @@ Characters.forEach(element => {
     })
 
     multi.addEventListener("click", function () {
-       
+
         if (who[pos].multi !== element.multi) {
             const creacard = document.querySelector(`#${element.name}`)
             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
