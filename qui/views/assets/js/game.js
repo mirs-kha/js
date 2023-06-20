@@ -5,7 +5,7 @@ var life = 3
 
 var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
 var btnsFerme = document.getElementsByClassName(".btn2")
-var btns = document.querySelector('.btn2')
+var btns = document.querySelectorall('.btn2')
 
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
@@ -154,23 +154,8 @@ Characters.forEach(element => {
     // var btns = choix.getElementsByClassName("btn2");
 
     console.log(element)
-    // // iterate over the array that was just queried for
-    // for (var i = 0; i < btns.length; i++) {
 
-    //     btns[i].addEventListener("click", function () {
-    //         afflife.innerHTML = life - 1
-
-    //         if (JSON.stringify(who[pos].chapeau) !== JSON.stringify(element.chapeau)) {
-    //             const creacard = document.querySelector(`#${element.name}`)
-    //             creacard.innerHTML = '<img src="views/assets/imgs/retourne.png">'
-    //             console.log(element.name)
-    //             creacard.setAttribute("class", `div${element.id} retourne`)
-    //             btns[i].setAttribute("disabled", "true")
-    //         }
-    //         else {
-    //         }
-    //     })
-    // }
+    
 
     chapeau.addEventListener("click", function () {
        
