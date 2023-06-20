@@ -5,7 +5,7 @@ var life = 3
 
 var btns2 = ["oreilles", "cornes", "tentacules", "cheveux", "chapeau", "lunettes", "barbe", "ailes", "moustache", "troisyeux", "deuxyeux", "oeil", "rose", "jaune", "vert", "violet", "multi"]
 var btnsFerme = document.getElementsByClassName(".btn2")
-var btns = document.querySelectorall('.btn2')
+var btns = document.querySelectorAll('.btn2')
 
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
